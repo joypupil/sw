@@ -11,7 +11,7 @@ public class UserControlller extends Controller{
     
     //展示用户信息
     public void list() {
-        List<Transfiguration> list = Transfiguration.dao.find("select * from student");
+        List<Transfiguration> list = Transfiguration.dao.find("select * from user");
         setAttr("userlist", list);
         render("/userlist.jsp");
     }
