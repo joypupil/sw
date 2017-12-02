@@ -56,8 +56,8 @@ public class DemoConfig extends JFinalConfig {
         me.add(arp);
         //配置方言
         arp.setDialect(new MysqlDialect());
-        arp.addMapping("transfiguration_card", "id", Transfiguration.class);
-        arp.addMapping("user", "id", User.class);
+        arp.addMapping("transfiguration_card", "Id", Transfiguration.class);
+        arp.addMapping("user", "Id", User.class);
     }
 
     @Override
