@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.jfinal.aop.Clear;
 import com.jfinal.core.Controller;
-import com.sw.model.Transfiguration;
+import com.sw.model.TransfigurationCard;
 import com.sw.model.User;
 
 public class UserControlller extends Controller{

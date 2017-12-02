@@ -13,9 +13,9 @@ import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
-import com.sw.controller.TransfigurationControlller;
+import com.sw.controller.TransfigurationCardController;
 import com.sw.controller.UserControlller;
-import com.sw.model.Transfiguration;
+import com.sw.model.TransfigurationCard;
 import com.sw.model.User;
 
 public class DemoConfig extends JFinalConfig {
@@ -56,7 +56,7 @@ public class DemoConfig extends JFinalConfig {
         me.add(arp);
         //配置方言
         arp.setDialect(new MysqlDialect());
-        arp.addMapping("transfiguration_card", "Id", Transfiguration.class);
+        arp.addMapping("transfiguration_card", "Id", TransfigurationCard.class);
         arp.addMapping("user", "Id", User.class);
     }
 
@@ -64,7 +64,7 @@ public class DemoConfig extends JFinalConfig {
     //配置路由
     public void configRoute(Routes me) {
         // TODO Auto-generated method stub
-        me.add("/transfiguration", TransfigurationControlller.class);
+        me.add("/transfiguration", TransfigurationCardController.class);
         me.add("/user", UserControlller.class);
     }
 
